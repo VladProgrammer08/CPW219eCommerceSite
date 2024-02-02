@@ -1,5 +1,5 @@
 # eCommerceSite
-The eCommerSite is a modern Website written in C++ and C#. The website provides users to browse and purchase digital copies of games for various platforms, such as:
+The eCommerSite is a modern Website written in C#, HTML, CSS, and JS. The website provides users to browse and purchase digital copies of games for various platforms, such as:
 
 - PC
 - Mobile devices
@@ -22,10 +22,10 @@ The website regularly updates its products and also adds weekly discounts. You c
 - The ability to leave reviews for any game you like
 
 ## Getting started
-1. Your computer must be running Windows 11 or newer
+1. Your computer must be running Windows 10 or newer
 1. Install the latest version of [Visual Studio](https://developer.microsoft.com/en-us/windows/downloads/)
 1. Open Visual Studio Setup 
-1. Install the "Universal Windows Platform Development" workload
+1. Install the "ASP.NET" and "Web Development" workload
 1. Get the URL: `` https://github.com/VladProgrammer08/CPW219eCommerceSite.git ``
 1. Open Visual Studio, chose Clone a repository, type the URL and click Clone
 1. To Run and Open Website on the menu bar, choose Debug, Start without debugging

@@ -1,6 +1,7 @@
 ﻿using CPW219eCommerceSite.Data;
 using CPW219eCommerceSite.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace CPW219eCommerceSite.Controllers
 {
@@ -11,6 +12,15 @@ namespace CPW219eCommerceSite.Controllers
         {
             _context = context;
         }
+        public async Task<IActionResult> Index()
+        {
+            // Get all games from the Db
+            List<Game> games = await _context.Games.ToListAsync();
+
+            // Show them on the page
+            return View(games);
+        }
+
         [HttpGet]
         public IActionResult Create()
         {

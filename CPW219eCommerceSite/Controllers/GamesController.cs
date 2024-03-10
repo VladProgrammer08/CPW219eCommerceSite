@@ -85,6 +85,7 @@ namespace CPW219eCommerceSite.Controllers
             {
                 _context.Games.Remove(gameToDelete);
                 await _context.SaveChangesAsync();
+
                 TempData["Message"] = gameToDelete.Title + " was deleted successfully";
                 return RedirectToAction("Index");
             }

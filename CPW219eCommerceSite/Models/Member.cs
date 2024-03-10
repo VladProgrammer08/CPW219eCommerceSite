@@ -42,9 +42,11 @@ namespace CPW219eCommerceSite.Models
         public string ConfirmePassword { get; set; }
     }
 
+    [Keyless]
     public class LoginViewModel
     {
         [Required]
+        [EmailAddress]
         public string Email { get; set; } = null!;
 
         [Required]
